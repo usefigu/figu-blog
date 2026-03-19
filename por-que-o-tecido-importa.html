@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Por que o Tecido é a Diferença entre uma Roupa Boa e uma Roupa que Dura | Blog FIGU</title>
+<meta name="description" content="Entenda por que o tecido é o elemento mais importante de uma peça — e como reconhecer qualidade antes de comprar. O ponto de vista da FIGU sobre moda que dura.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root { --black: #111111; --white: #FFFFFF; --off: #F7F6F4; --sand: #E8E2D9; --mid: #888580; --light: #C8C5BF; --text: #2A2A28; }
+body { font-family: 'Inter', sans-serif; font-weight: 300; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
+nav { position: sticky; top: 0; z-index: 100; background: var(--white); border-bottom: 1px solid var(--sand); padding: 0 48px; height: 60px; display: flex; align-items: center; justify-content: space-between; }
+.nav-logo { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--black); text-decoration: none; }
+.nav-links { display: flex; gap: 32px; list-style: none; }
+.nav-links a { font-size: 11px; font-weight: 400; letter-spacing: 0.15em; text-transform: uppercase; color: var(--mid); text-decoration: none; transition: color 0.15s; }
+.nav-links a:hover { color: var(--black); }
+.back-link { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 400; letter-spacing: 0.15em; text-transform: uppercase; color: var(--mid); text-decoration: none; padding: 20px 48px; border-bottom: 1px solid var(--sand); transition: color 0.15s; }
+.back-link:hover { color: var(--black); }
+.hero { background: var(--off); padding: 90px 48px 72px; border-bottom: 1px solid var(--sand); }
+.hero-tag { font-size: 10px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--light); margin-bottom: 24px; }
+.hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(36px, 5vw, 60px); font-weight: 400; line-height: 1.12; color: var(--black); max-width: 720px; margin-bottom: 28px; }
+.hero h1 em { font-style: italic; }
+.hero-intro { font-size: 16px; line-height: 1.75; color: var(--mid); max-width: 560px; margin-bottom: 40px; }
+.hero-meta { display: flex; gap: 32px; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--light); padding-top: 32px; border-top: 1px solid var(--sand); }
+.container { max-width: 760px; margin: 0 auto; padding: 0 48px; }
+.prose { padding: 72px 0; }
+.prose h2 { font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 400; line-height: 1.25; color: var(--black); margin: 52px 0 18px; }
+.prose h2 em { font-style: italic; }
+.prose h2:first-child { margin-top: 0; }
+.prose p { font-size: 15px; line-height: 1.85; color: var(--mid); margin-bottom: 18px; }
+.inline-link { color: var(--black); font-weight: 400; border-bottom: 1px solid var(--black); text-decoration: none; transition: opacity 0.15s; }
+.inline-link:hover { opacity: 0.5; }
+.callout { background: var(--black); padding: 44px 48px; margin: 48px 0; }
+.callout p { font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 400; font-style: italic; line-height: 1.55; color: var(--white); margin: 0; }
+.callout p em { color: var(--sand); }
+.checklist { background: var(--off); border: 1px solid var(--sand); padding: 36px 44px; margin: 44px 0; }
+.checklist-title { font-size: 10px; font-weight: 500; letter-spacing: 0.25em; text-transform: uppercase; color: var(--light); margin-bottom: 24px; }
+.checklist-item { display: flex; align-items: flex-start; gap: 16px; padding: 13px 0; border-bottom: 1px solid var(--sand); }
+.checklist-item:last-child { border-bottom: none; padding-bottom: 0; }
+.check { width: 18px; height: 18px; border: 1px solid var(--light); background: var(--white); flex-shrink: 0; margin-top: 2px; }
+.checklist-text { font-size: 14px; line-height: 1.65; color: var(--text); }
+.checklist-text strong { font-weight: 500; color: var(--black); }
+.products-block { border-top: 1px solid var(--sand); padding-top: 48px; margin-top: 48px; }
+.products-title { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 400; color: var(--black); margin-bottom: 8px; }
+.products-subtitle { font-size: 14px; color: var(--mid); margin-bottom: 32px; }
+.cards-col { display: flex; flex-direction: column; gap: 10px; }
+.card { display: grid; grid-template-columns: 84px 1fr; gap: 14px; align-items: center; background: var(--off); padding: 14px; text-decoration: none; transition: background 0.15s; }
+.card:hover { background: var(--sand); }
+.card-img-placeholder { width: 84px; height: 100px; background: var(--sand); display: flex; align-items: center; justify-content: center; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light); flex-shrink: 0; }
+.card-name { font-size: 12px; font-weight: 500; color: var(--black); margin-bottom: 4px; }
+.card-desc { font-size: 11px; color: var(--mid); margin-bottom: 10px; line-height: 1.5; }
+.card-btn { display: inline-block; font-size: 9px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--white); background: var(--black); padding: 6px 12px; }
+.closing { padding: 64px 0 96px; text-align: center; border-top: 1px solid var(--sand); margin-top: 56px; }
+.closing p { font-family: 'Playfair Display', serif; font-size: 19px; font-style: italic; color: var(--mid); max-width: 480px; margin: 0 auto 28px; line-height: 1.6; }
+.closing-btn { display: inline-block; background: var(--black); color: var(--white); font-size: 11px; font-weight: 500; letter-spacing: 0.25em; text-transform: uppercase; padding: 15px 44px; text-decoration: none; transition: background 0.15s; }
+.closing-btn:hover { background: #333; }
+footer { background: var(--off); border-top: 1px solid var(--sand); padding: 36px 48px; display: flex; align-items: center; justify-content: space-between; }
+.footer-logo { font-size: 12px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--black); text-decoration: none; }
+.footer-links { display: flex; gap: 28px; list-style: none; }
+.footer-links a { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); text-decoration: none; transition: color 0.15s; }
+.footer-links a:hover { color: var(--black); }
+.footer-copy { font-size: 11px; color: var(--light); }
+@media (max-width: 768px) {
+  nav { padding: 0 24px; } .nav-links { display: none; }
+  .back-link { padding: 16px 24px; }
+  .hero { padding: 60px 24px 48px; }
+  .container { padding: 0 24px; }
+  .callout { padding: 32px 24px; }
+  .checklist { padding: 28px 24px; }
+  footer { padding: 28px 24px; flex-direction: column; gap: 16px; text-align: center; } .footer-links { display: none; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="https://figu.com.br" class="nav-logo">Figu</a>
+  <ul class="nav-links">
+    <li><a href="https://figu.com.br/produtos/">Coleção</a></li>
+    <li><a href="index.html">Blog</a></li>
+    <li><a href="https://figu.com.br/quem-somos/">Sobre</a></li>
+    <li><a href="https://figu.com.br/contato/">Contato</a></li>
+  </ul>
+</nav>
+
+<a href="index.html" class="back-link">← Voltar ao blog</a>
+
+<section class="hero">
+  <div class="hero-tag">Moda · Qualidade · Consumo Consciente</div>
+  <h1>Por que o tecido é a diferença entre<br>uma roupa boa e uma roupa <em>que dura</em></h1>
+  <p class="hero-intro">Você já comprou uma peça que parecia ótima na loja e virou um trapo depois de cinco lavagens? O problema raramente é o modelo ou a cor — quase sempre é o tecido. E reconhecer qualidade é mais simples do que parece.</p>
+  <div class="hero-meta">
+    <span>Abril 2026</span>
+    <span>Leitura: 7 min</span>
+    <span>Moda & Qualidade</span>
+  </div>
+</section>
+
+<div class="container">
+  <div class="prose">
+
+    <h2>A roupa que você descarta e a roupa que você guarda</h2>
+    <p>Pense nas peças que você tem há mais de três anos no guarda-roupa. Aquelas que você continua usando, que ainda ficam bem, que não perderam o caimento nem a cor. O que elas têm em comum?</p>
+    <p>Provavelmente são peças feitas com tecido de qualidade. Isso não é coincidência — é física. Um tecido bem construído resiste ao uso, mantém a estrutura depois de múltiplas lavagens e envelhece com dignidade. Um tecido ruim faz exatamente o oposto: perde forma, desbota, amassa e começa a parecer velho muito antes do esperado.</p>
+    <p>A diferença entre uma peça que dura dois anos e uma que dura dez começa no material. Sempre.</p>
+
+    <div class="callout">
+      <p>"O tecido não é apenas o que você toca — é o que determina se a peça vai durar <em>dois anos ou uma vida inteira.</em>"</p>
+    </div>
+
+    <h2>O que a fast fashion não quer que você saiba</h2>
+    <p>A indústria da moda rápida construiu um modelo inteiro baseado em uma premissa simples: fazer você comprar mais. Para isso, as peças precisam durar menos. E o jeito mais fácil de fazer uma roupa durar menos é usar tecido de baixa qualidade.</p>
+    <p>O resultado é um ciclo que você provavelmente já conhece: compra muitas peças baratas, usa pouco cada uma, descarta cedo, compra de novo. No final do ano, você gastou mais do que gastaria comprando menos peças de qualidade — e tem um guarda-roupa cheio de coisas que não funcionam.</p>
+    <p>Comprar menos e melhor não é luxo — é uma decisão financeira inteligente. Uma <a href="https://figu.com.br/produtos/calca-adele/" class="inline-link">Calça Adele</a> usada duas vezes por semana por três anos custa muito menos por uso do que três calças baratas trocadas a cada ano.</p>
+
+    <h2>Como reconhecer um bom tecido antes de comprar</h2>
+    <p>Você não precisa ser especialista para reconhecer qualidade. Existem alguns testes simples que funcionam na prática:</p>
+
+    <div class="checklist">
+      <div class="checklist-title">O teste da qualidade — o que fazer na loja</div>
+      <div class="checklist-item">
+        <div class="check"></div>
+        <div class="checklist-text"><strong>Amasse e solte.</strong> Segure o tecido na mão, amasse e solte. Um tecido de qualidade volta ao estado original rapidamente. Um tecido ruim mantém as marcas das dobras.</div>
+      </div>
+      <div class="checklist-item">
+        <div class="check"></div>
+        <div class="checklist-text"><strong>Observe a transparência.</strong> Coloque o tecido contra a luz. Tecidos muito finos e transparentes geralmente são de qualidade inferior — ou são intencionalmente leves, o que é diferente.</div>
+      </div>
+      <div class="checklist-item">
+        <div class="check"></div>
+        <div class="checklist-text"><strong>Sinta o peso.</strong> Tecidos de qualidade têm um peso que você percebe na mão. Leveza excessiva quase sempre significa pouca fibra — o que compromete durabilidade e caimento.</div>
+      </div>
+      <div class="checklist-item">
+        <div class="check"></div>
+        <div class="checklist-text"><strong>Puxe levemente.</strong> Com dois dedos, puxe o tecido suavemente e observe se ele volta ao lugar. Se distorcer e não voltar, vai fazer o mesmo depois de algumas lavagens.</div>
+      </div>
+      <div class="checklist-item">
+        <div class="check"></div>
+        <div class="checklist-text"><strong>Leia a etiqueta.</strong> Fibras naturais como algodão, linho, seda e lã geralmente são mais duráveis e confortáveis. Misturas com alto teor sintético tendem a deteriorar mais rápido.</div>
+      </div>
+    </div>
+
+    <h2>Textura não é apenas estética — é qualidade visível</h2>
+    <p>Existe uma categoria de tecido que vai além da durabilidade: o tecido com presença tátil. Aquele que você percebe ao toque, que tem dimensão, que parece que foi pensado com intenção. É o tipo de material que transforma uma peça comum em uma peça que chama atenção — não por ser chamativa, mas por ter substância.</p>
+    <p>A <a href="https://figu.com.br/produtos/calca-emma/" class="inline-link">Calça Emma</a> em tela estilo crochet é um exemplo: a textura não é decoração, é parte da identidade da peça. A <a href="https://figu.com.br/produtos/saia-carola-illbk/" class="inline-link">Saia Carola</a> carrega essa mesma filosofia — um tecido diferenciado que fala por si antes mesmo de qualquer combinação de look.</p>
+    <p>Quando o tecido tem essa qualidade, a roupa não precisa de mais nada para se destacar. É exatamente essa a proposta da FIGU: peças que falam pelo material, pelo corte e pela construção — não pela tendência do mês.</p>
+
+    <h2>Investir em menos, usar mais</h2>
+    <p>A lógica do guarda-roupa de qualidade é simples: prefira peças que você vai querer usar repetidamente a peças que você vai usar uma vez e esquecer. Isso exige uma mudança de mentalidade na hora de comprar — olhar além do preço inicial e pensar no custo por uso.</p>
+    <p>Uma peça de R$ 600 usada 200 vezes custa R$ 3,00 por uso. Uma peça de R$ 150 usada 10 vezes custa R$ 15,00 por uso. A conta é simples — e raramente é feita.</p>
+
+    <div class="products-block">
+      <div class="products-title">Peças FIGU feitas para durar</div>
+      <div class="products-subtitle">Tecidos diferenciados, cortes precisos, construção com intenção.</div>
+      <div class="cards-col">
+        <a href="https://figu.com.br/produtos/saia-carola-illbk/" class="card">
+          <div class="card-img-placeholder">Foto</div>
+          <div class="card-info"><div class="card-name">Saia Carola</div><div class="card-desc">Tecido com presença tátil e identidade própria</div><span class="card-btn">Comprar — R$ 764</span></div>
+        </a>
+        <a href="https://figu.com.br/produtos/calca-emma/" class="card">
+          <div class="card-img-placeholder">Foto</div>
+          <div class="card-info"><div class="card-name">Calça Emma</div><div class="card-desc">Tela estilo crochet — textura e sofisticação</div><span class="card-btn">Comprar — R$ 598</span></div>
+        </a>
+        <a href="https://figu.com.br/produtos/vestido-aya-tfa7l/" class="card">
+          <div class="card-img-placeholder">Foto</div>
+          <div class="card-info"><div class="card-name">Vestido Aya</div><div class="card-desc">Tecido diferenciado com caimento impecável</div><span class="card-btn">Comprar — R$ 688</span></div>
+        </a>
+        <a href="https://figu.com.br/produtos/top-ciccy-gjpm3/" class="card">
+          <div class="card-img-placeholder">Foto</div>
+          <div class="card-info"><div class="card-name">Top Ciccy</div><div class="card-desc">Qualidade que você percebe no toque</div><span class="card-btn">Comprar — R$ 434</span></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="closing">
+      <p>Moda que dura começa com tecido que respeita quem usa.</p>
+      <a href="https://figu.com.br/produtos/" class="closing-btn">Ver toda a coleção FIGU</a>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <a href="https://figu.com.br" class="footer-logo">Figu</a>
+  <ul class="footer-links">
+    <li><a href="https://figu.com.br/produtos/">Coleção</a></li>
+    <li><a href="index.html">Blog</a></li>
+    <li><a href="https://figu.com.br/contato/">Contato</a></li>
+  </ul>
+  <span class="footer-copy">© 2026 FIGU · figu.com.br</span>
+</footer>
+
+</body>
+</html>

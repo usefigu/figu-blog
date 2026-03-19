@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>As Peças-Chave para o Guarda-Roupa Feminino Sofisticado | Blog FIGU</title>
+<meta name="description" content="As peças essenciais que todo guarda-roupa feminino sofisticado precisa ter — escolhas intencionais, tecidos de qualidade e cortes que duram além das tendências.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root { --black: #111111; --white: #FFFFFF; --off: #F7F6F4; --sand: #E8E2D9; --mid: #888580; --light: #C8C5BF; --text: #2A2A28; }
+body { font-family: 'Inter', sans-serif; font-weight: 300; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
+nav { position: sticky; top: 0; z-index: 100; background: var(--white); border-bottom: 1px solid var(--sand); padding: 0 48px; height: 60px; display: flex; align-items: center; justify-content: space-between; }
+.nav-logo { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--black); text-decoration: none; }
+.nav-links { display: flex; gap: 32px; list-style: none; }
+.nav-links a { font-size: 11px; font-weight: 400; letter-spacing: 0.15em; text-transform: uppercase; color: var(--mid); text-decoration: none; transition: color 0.15s; }
+.nav-links a:hover { color: var(--black); }
+.back-link { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 400; letter-spacing: 0.15em; text-transform: uppercase; color: var(--mid); text-decoration: none; padding: 20px 48px; border-bottom: 1px solid var(--sand); transition: color 0.15s; }
+.back-link:hover { color: var(--black); }
+.hero { background: var(--black); padding: 90px 48px 72px; }
+.hero-tag { font-size: 10px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--mid); margin-bottom: 24px; }
+.hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(36px, 5vw, 60px); font-weight: 400; line-height: 1.12; color: var(--white); max-width: 720px; margin-bottom: 28px; }
+.hero h1 em { font-style: italic; color: var(--sand); }
+.hero-intro { font-size: 16px; line-height: 1.75; color: var(--mid); max-width: 560px; margin-bottom: 40px; }
+.hero-meta { display: flex; gap: 32px; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--light); padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.08); }
+.container { max-width: 900px; margin: 0 auto; padding: 0 48px; }
+.intro-block { padding: 64px 0 0; }
+.intro-block p { font-family: 'Playfair Display', serif; font-size: 20px; font-style: italic; line-height: 1.65; color: var(--text); margin-bottom: 20px; }
+.intro-block p.regular { font-family: 'Inter', sans-serif; font-size: 15px; font-style: normal; line-height: 1.8; color: var(--mid); }
+.section-label { font-size: 10px; font-weight: 500; letter-spacing: 0.25em; text-transform: uppercase; color: var(--light); margin: 56px 0 40px; display: flex; align-items: center; gap: 16px; }
+.section-label::after { content: ''; flex: 1; height: 1px; background: var(--sand); }
+.item-block { padding: 56px 0; border-top: 1px solid var(--sand); display: grid; grid-template-columns: 72px 1fr; gap: 36px; align-items: start; }
+.item-num { font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 400; font-style: italic; color: var(--sand); line-height: 1; }
+.item-tag { font-size: 9px; font-weight: 500; letter-spacing: 0.25em; text-transform: uppercase; color: var(--light); margin-bottom: 12px; }
+.item-title { font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 400; line-height: 1.2; color: var(--black); margin-bottom: 16px; }
+.item-title em { font-style: italic; }
+.item-text { font-size: 15px; line-height: 1.8; color: var(--mid); margin-bottom: 16px; }
+.inline-link { color: var(--black); font-weight: 400; border-bottom: 1px solid var(--black); text-decoration: none; transition: opacity 0.15s; }
+.inline-link:hover { opacity: 0.5; }
+.cards-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 24px; }
+.card { display: grid; grid-template-columns: 84px 1fr; gap: 14px; align-items: center; background: var(--off); padding: 14px; text-decoration: none; transition: background 0.15s; }
+.card:hover { background: var(--sand); }
+.card-img-placeholder { width: 84px; height: 100px; background: var(--sand); display: flex; align-items: center; justify-content: center; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light); flex-shrink: 0; }
+.card-name { font-size: 12px; font-weight: 500; color: var(--black); margin-bottom: 4px; }
+.card-price { font-size: 11px; color: var(--mid); margin-bottom: 10px; }
+.card-btn { display: inline-block; font-size: 9px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--white); background: var(--black); padding: 6px 12px; }
+.pull-quote { background: var(--off); padding: 52px; margin: 56px 0; border-left: 2px solid var(--black); }
+.pull-quote blockquote { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 400; font-style: italic; line-height: 1.5; color: var(--black); }
+.closing { padding: 64px 0 96px; text-align: center; border-top: 1px solid var(--sand); margin-top: 56px; }
+.closing p { font-family: 'Playfair Display', serif; font-size: 19px; font-style: italic; color: var(--mid); max-width: 480px; margin: 0 auto 28px; line-height: 1.6; }
+.closing-btn { display: inline-block; background: var(--black); color: var(--white); font-size: 11px; font-weight: 500; letter-spacing: 0.25em; text-transform: uppercase; padding: 15px 44px; text-decoration: none; transition: background 0.15s; }
+.closing-btn:hover { background: #333; }
+footer { background: var(--off); border-top: 1px solid var(--sand); padding: 36px 48px; display: flex; align-items: center; justify-content: space-between; }
+.footer-logo { font-size: 12px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--black); text-decoration: none; }
+.footer-links { display: flex; gap: 28px; list-style: none; }
+.footer-links a { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); text-decoration: none; transition: color 0.15s; }
+.footer-links a:hover { color: var(--black); }
+.footer-copy { font-size: 11px; color: var(--light); }
+@media (max-width: 768px) {
+  nav { padding: 0 24px; } .nav-links { display: none; }
+  .back-link { padding: 16px 24px; }
+  .hero { padding: 60px 24px 48px; }
+  .container { padding: 0 24px; }
+  .item-block { grid-template-columns: 1fr; gap: 12px; }
+  .cards-row { grid-template-columns: 1fr; }
+  .pull-quote { padding: 36px 24px; }
+  footer { padding: 28px 24px; flex-direction: column; gap: 16px; text-align: center; } .footer-links { display: none; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="https://figu.com.br" class="nav-logo">Figu</a>
+  <ul class="nav-links">
+    <li><a href="https://figu.com.br/produtos/">Coleção</a></li>
+    <li><a href="index.html">Blog</a></li>
+    <li><a href="https://figu.com.br/quem-somos/">Sobre</a></li>
+    <li><a href="https://figu.com.br/contato/">Contato</a></li>
+  </ul>
+</nav>
+
+<a href="index.html" class="back-link">← Voltar ao blog</a>
+
+<section class="hero">
+  <div class="hero-tag">Estilo · Guarda-Roupa</div>
+  <h1>As peças-chave que todo guarda-roupa<br>feminino <em>sofisticado precisa ter</em></h1>
+  <p class="hero-intro">Não se trata de ter muito — se trata de ter certo. Um guarda-roupa que funciona é feito de escolhas intencionais: peças que conversam entre si, duram além das tendências e dizem algo sobre quem você é.</p>
+  <div class="hero-meta">
+    <span>Abril 2026</span>
+    <span>Leitura: 6 min</span>
+    <span>Estilo & Guarda-Roupa</span>
+  </div>
+</section>
+
+<div class="container">
+  <div class="intro-block">
+    <p>"Não tenho nada para vestir" — dito por quem tem o guarda-roupa cheio.</p>
+    <p class="regular">A contradição é conhecida. O problema raramente é quantidade — é coerência. Um guarda-roupa que funciona é aquele onde cada peça conversa com as outras, onde você abre a porta e já sabe o que vai montar. Isso não é sorte. É resultado de escolhas certas feitas com intenção.</p>
+    <p class="regular">Separamos as 5 categorias de peças que fazem essa diferença — e as opções da FIGU que entregam cada uma delas com a qualidade que você merece.</p>
+  </div>
+
+  <div class="section-label">As 5 peças essenciais</div>
+
+  <div class="item-block">
+    <div class="item-num">01</div>
+    <div class="item-content">
+      <div class="item-tag">Base do guarda-roupa</div>
+      <h2 class="item-title">A calça de <em>corte impecável</em></h2>
+      <p class="item-text">Toda coleção começa por uma calça bem cortada. Não uma calça qualquer — aquela com a modelagem que cai certo, em um tecido que não perde o caimento depois de três lavagens. É a peça que você vai usar duas vezes por semana durante anos.</p>
+      <p class="item-text">O que define uma boa calça não é o preço nem a marca — é o corte. A <a href="https://figu.com.br/produtos/calca-adele/" class="inline-link">Calça Adele</a> tem essa modelagem resolvida: estruturada, com caimento limpo e um corte que valoriza a silhueta sem precisar anunciar isso. A <a href="https://figu.com.br/produtos/calca-emma/" class="inline-link">Calça Emma</a> traz a mesma intenção em uma proposta mais textural — o crochet que adiciona personalidade sem perder sofisticação.</p>
+      <div class="cards-row">
+        <a href="https://figu.com.br/produtos/calca-adele/" class="card">
+          <div class="card-img-placeholder">Foto</div>
+          <div class="card-info"><div class="card-name">Calça Adele</div><div class="card-price">R$ 448,00</div><span class="card-btn">Comprar</span></div>
+        </a>
+        <a href="https://figu.com.br/produtos/calca-emma/" class="card">
+          <div class="card-img-placeholder">Foto</div>
+          <div class="card-info"><div class="card-name">Calça Emma</div><div class="card-price">R$ 598,00</div><span class="card-btn">Comprar</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="item-block">
+    <div class="item-num">02</div>
+    <div class="item-content">
+      <div class="item-tag">Versatilidade</div>
+      <h2 class="item-title">A blusa que <em>funciona em tudo</em></h2>
+      <p class="item-text">Existe uma blusa específica que faz um guarda-roupa funcionar: aquela que combina com a calça de alfaiataria, com a saia midi e com o macacão. Que vai bem no trabalho e no jantar. Que tem um caimento que não exige pensar.</p>
+      <p class="item-text">Essa peça não é genérica — ela tem identidade própria, mas uma identidade que não compete com o resto do look. A <a href="https://figu.com.br/produtos/blusa-adele/" class="inline-link">Blusa Adele</a> cumpre esse papel com precisão. A <a href="https://figu.com.br/produtos/blusa-nina/" class="inline-link">Blusa Nina</a> faz o mesmo com um toque ligeiramente mais despojado.</p>
+      <div class="cards-row">
+        <a href="https://figu.com.br/produtos/blusa-adele/" class="card">
+          <div class="card-img-placeholder">Foto</div>
+          <div class="card-info"><div class="card-name">Blusa Adele</div><div class="card-price">R$ 278,00</div><span class="card-btn">Comprar</span></div>
+        </a>
+        <a href="https://figu.com.br/produtos/blusa-nina/" class="card">
+          <div class="card-img-placeholder">Foto</div>
+          <div class="card-info"><div class="card-name">Blusa Nina</div><div class="card-price">R$ 358,00</div><span class="card-btn">Comprar</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="item-block">
+    <div class="item-num">03</div>
+    <div class="item-content">
+      <div class="item-tag">Presença imediata</div>
+      <h2 class="item-title">O vestido que <em>resolve o dia</em></h2>
+      <p class="item-text">Um bom vestido no guarda-roupa é aquele que resolve o look inteiro em um único gesto. Sem pensar em combinações, sem montar camadas — você coloca e está pronta. O comprimento midi é o mais versátil: funciona no trabalho, em eventos e no dia a dia com igual elegância.</p>
+      <p class="item-text">O <a href="https://figu.com.br/produtos/vestido-olympia-vermelho-qcdfk/" class="inline-link">Vestido Olympia Vermelho</a> é essa peça para quem quer presença imediata. O <a href="https://figu.com.br/produtos/vestido-olympia-off-white-j63ak/" class="inline-link">Vestido Olympia Off White</a> entrega a mesma resolução em uma versão mais atemporal — para quem quer investir em uma peça que dure anos.</p>
+      <div class="cards-row">
+        <a href="https://figu.com.br/produtos/vestido-olympia-vermelho-qcdfk/" class="card">
+          <div class="card-img-placeholder">Foto</div>
+          <div class="card-info"><div class="card-name">Vestido Olympia Vermelho</div><div class="card-price">R$ 678,00</div><span class="card-btn">Comprar</span></div>
+        </a>
+        <a href="https://figu.com.br/produtos/vestido-olympia-off-white-j63ak/" class="card">
+          <div class="card-img-placeholder">Foto</div>
+          <div class="card-info"><div class="card-name">Vestido Olympia Off White</div><div class="card-price">R$ 678,00</div><span class="card-btn">Comprar</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pull-quote">
+    <blockquote>"Um guarda-roupa sofisticado não é aquele com mais peças — é aquele onde cada peça tem um motivo claro para estar lá."</blockquote>
+  </div>
+
+  <div class="item-block">
+    <div class="item-num">04</div>
+    <div class="item-content">
+      <div class="item-tag">A peça única</div>
+      <h2 class="item-title">O macacão que <em>dispensa tudo</em></h2>
+      <p class="item-text">Para quem quer praticidade máxima sem abrir mão de sofisticação, o macacão bem resolvido é indispensável. Uma única peça que cria um look completo — sem pensar em combinações, sem risco de errar a proporção.</p>
+      <p class="item-text">O <a href="https://figu.com.br/produtos/macaquinho-lori/" class="inline-link">Macacão Lóri</a> tem esse equilíbrio resolvido — estruturado onde precisa, fluido onde deve. Em marrom ou off-white, ele é a definição de peça única que sempre funciona.</p>
+      <div class="cards-row">
+        <a href="https://figu.com.br/produtos/macaquinho-lori/" class="card">
+          <div class="card-img-placeholder">Foto</div>
+          <div class="card-info"><div class="card-name">Macacão Lóri — Marrom</div><div class="card-price">R$ 329,00</div><span class="card-btn">Comprar</span></div>
+        </a>
+        <a href="https://figu.com.br/produtos/macaquinho-lori/" class="card">
+          <div class="card-img-placeholder">Foto</div>
+          <div class="card-info"><div class="card-name">Macacão Lóri — Off White</div><div class="card-price">R$ 329,00</div><span class="card-btn">Comprar</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="item-block">
+    <div class="item-num">05</div>
+    <div class="item-content">
+      <div class="item-tag">Composição & Layering</div>
+      <h2 class="item-title">O top que <em>multiplica o guarda-roupa</em></h2>
+      <p class="item-text">Existe uma categoria de peça subestimada: o top neutro de qualidade. Neutro no sentido de versátil — uma peça que você usa sozinha, embaixo de outra, sobre uma saia ou dentro de uma calça. Que multiplica as combinações possíveis sem adicionar complexidade.</p>
+      <p class="item-text">O <a href="https://figu.com.br/produtos/top-ciccy-gjpm3/" class="inline-link">Top Ciccy</a> em off-white ou cru é exatamente isso. Coloque sobre a <a href="https://figu.com.br/produtos/calca-emma/" class="inline-link">Calça Emma</a> para um look textural, combine com a <a href="https://figu.com.br/produtos/saia-carola-illbk/" class="inline-link">Saia Carola</a> para uma proposta mais sofisticada. É a peça que trabalha mais do que qualquer outra no guarda-roupa.</p>
+      <div class="cards-row">
+        <a href="https://figu.com.br/produtos/top-ciccy-gjpm3/" class="card">
+          <div class="card-img-placeholder">Foto</div>
+          <div class="card-info"><div class="card-name">Top Ciccy</div><div class="card-price">R$ 434,00</div><span class="card-btn">Comprar</span></div>
+        </a>
+        <a href="https://figu.com.br/produtos/saia-carola-illbk/" class="card">
+          <div class="card-img-placeholder">Foto</div>
+          <div class="card-info"><div class="card-name">Saia Carola</div><div class="card-price">R$ 764,00</div><span class="card-btn">Comprar</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="closing">
+    <p>Um guarda-roupa que funciona começa com as peças certas. O resto é consequência.</p>
+    <a href="https://figu.com.br/produtos/" class="closing-btn">Ver toda a coleção FIGU</a>
+  </div>
+</div>
+
+<footer>
+  <a href="https://figu.com.br" class="footer-logo">Figu</a>
+  <ul class="footer-links">
+    <li><a href="https://figu.com.br/produtos/">Coleção</a></li>
+    <li><a href="index.html">Blog</a></li>
+    <li><a href="https://figu.com.br/contato/">Contato</a></li>
+  </ul>
+  <span class="footer-copy">© 2026 FIGU · figu.com.br</span>
+</footer>
+
+</body>
+</html>
