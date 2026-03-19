@@ -7,12 +7,12 @@
 <title>Blog FIGU | Moda Feminina Sofisticada</title>
 <meta name="description" content="O blog da FIGU — tendências, estilo e moda feminina sofisticada. Conteúdo semanal para quem valoriza tecido, corte e identidade própria.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
   --black: #111111; --white: #FFFFFF; --off: #F7F6F4;
-  --sand: #E8E2D9; --mid: #888580; --light: #C8C5BF; --text: #2A2A28;
+  --sand: #E8E2D9; --mid: #888580; --light: #C8C5BF; --text: #2A2A28; --accent: #8B7355;
 }
 body { font-family: 'Inter', sans-serif; font-weight: 300; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
 
@@ -22,56 +22,66 @@ nav { position: sticky; top: 0; z-index: 100; background: var(--white); border-b
 .nav-links a { font-size: 11px; font-weight: 400; letter-spacing: 0.15em; text-transform: uppercase; color: var(--mid); text-decoration: none; transition: color 0.15s; }
 .nav-links a:hover, .nav-links a.active { color: var(--black); }
 
-.hero { background: var(--black); padding: 100px 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: end; }
-.hero-tag { font-size: 10px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--mid); margin-bottom: 20px; }
-.hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(40px, 5vw, 68px); font-weight: 400; line-height: 1.1; color: var(--white); margin-bottom: 24px; }
-.hero h1 em { font-style: italic; color: var(--sand); }
-.hero-desc { font-size: 15px; line-height: 1.75; color: var(--mid); max-width: 420px; }
-.hero-right { display: flex; flex-direction: column; align-items: flex-end; gap: 32px; }
-.hero-stat { text-align: right; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; width: 100%; }
-.hero-stat-num { font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 400; font-style: italic; color: var(--sand); line-height: 1; }
-.hero-stat-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--mid); margin-top: 6px; }
+.hero { display: grid; grid-template-columns: 1.4fr 1fr; border-bottom: 1px solid var(--sand); min-height: 280px; }
+.hero-left { padding: 64px 48px 52px; display: flex; flex-direction: column; justify-content: flex-end; background: var(--white); }
+.hero-tag { font-size: 9px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--light); margin-bottom: 18px; }
+.hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(34px, 4.5vw, 56px); font-weight: 400; line-height: 1.08; color: var(--black); margin-bottom: 20px; }
+.hero h1 em { font-style: italic; color: var(--accent); }
+.hero-desc { font-size: 14px; line-height: 1.75; color: var(--mid); max-width: 380px; }
+.hero-right { background: var(--black); padding: 48px 40px; display: flex; flex-direction: column; justify-content: flex-end; position: relative; overflow: hidden; }
+.hero-right-bg { position: absolute; top: -10px; right: -10px; font-family: 'Playfair Display', serif; font-size: 200px; font-style: italic; color: rgba(255,255,255,0.03); line-height: 1; pointer-events: none; }
+.hero-stat { position: relative; z-index: 1; }
+.hero-stat + .hero-stat { margin-top: 28px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.08); }
+.hero-stat-num { font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 400; font-style: italic; color: var(--sand); line-height: 1; }
+.hero-stat-label { font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: #555; margin-top: 6px; }
 
-.section-wrap { padding: 80px 48px; }
+.section-wrap { padding: 56px 48px; }
 .section-wrap + .section-wrap { border-top: 1px solid var(--sand); }
-.section-label { font-size: 10px; font-weight: 500; letter-spacing: 0.25em; text-transform: uppercase; color: var(--light); margin-bottom: 40px; display: flex; align-items: center; gap: 16px; }
+.section-label { font-size: 9px; font-weight: 500; letter-spacing: 0.25em; text-transform: uppercase; color: var(--light); margin-bottom: 36px; display: flex; align-items: center; gap: 16px; }
 .section-label::after { content: ''; flex: 1; height: 1px; background: var(--sand); }
 
-.featured-card { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--sand); text-decoration: none; transition: border-color 0.2s; }
+/* FEATURED */
+.featured-card { display: grid; grid-template-columns: 1fr 1.2fr; border: 1px solid var(--sand); text-decoration: none; transition: border-color 0.2s; }
 .featured-card:hover { border-color: var(--black); }
-.featured-visual { background: var(--off); min-height: 420px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
-.featured-visual-label { font-family: 'Playfair Display', serif; font-size: 100px; font-weight: 400; font-style: italic; color: var(--sand); opacity: 0.6; user-select: none; }
-.featured-badge { position: absolute; top: 24px; left: 24px; background: var(--black); color: var(--white); font-size: 9px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; padding: 6px 14px; }
-.featured-content { padding: 56px 52px; display: flex; flex-direction: column; justify-content: center; background: var(--white); }
-.card-meta { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--light); margin-bottom: 20px; }
-.card-title { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 400; line-height: 1.2; color: var(--black); margin-bottom: 20px; }
+.featured-visual { min-height: 380px; position: relative; overflow: hidden; }
+.featured-visual-bg { position: absolute; inset: 0; background-size: cover; background-position: center; filter: blur(6px) brightness(0.6); transform: scale(1.08); transition: filter 0.3s; }
+.featured-card:hover .featured-visual-bg { filter: blur(4px) brightness(0.65); }
+.featured-visual-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.1) 60%); }
+.featured-visual-content { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; padding: 28px; }
+.featured-keyword { font-family: 'Bebas Neue', sans-serif; font-size: 72px; line-height: 0.9; color: rgba(255,255,255,0.92); letter-spacing: 0.02em; }
+.featured-badge { background: var(--white); color: var(--black); font-size: 9px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; padding: 5px 12px; margin-top: 12px; }
+.featured-content { padding: 48px 44px; display: flex; flex-direction: column; justify-content: center; background: var(--white); }
+.card-meta { font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--light); margin-bottom: 18px; }
+.card-title { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 400; line-height: 1.22; color: var(--black); margin-bottom: 18px; }
 .card-title em { font-style: italic; }
-.card-excerpt { font-size: 14px; line-height: 1.8; color: var(--mid); margin-bottom: 36px; }
-.card-link { display: inline-flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--black); text-decoration: none; border-bottom: 1px solid var(--black); padding-bottom: 2px; width: fit-content; transition: opacity 0.15s; }
+.card-excerpt { font-size: 14px; line-height: 1.8; color: var(--mid); margin-bottom: 32px; }
+.card-link { display: inline-flex; align-items: center; gap: 8px; font-size: 10px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--black); text-decoration: none; border-bottom: 1px solid var(--black); padding-bottom: 2px; width: fit-content; transition: opacity 0.15s; }
 .card-link:hover { opacity: 0.5; }
 
+/* GRID */
 .posts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--sand); border: 1px solid var(--sand); }
-.post-card { background: var(--white); text-decoration: none; transition: background 0.15s; display: flex; flex-direction: column; }
+.post-card { background: var(--white); text-decoration: none; display: flex; flex-direction: column; transition: background 0.15s; }
 .post-card:hover { background: var(--off); }
-.post-card-visual { aspect-ratio: 4/3; background: var(--off); display: flex; align-items: center; justify-content: center; overflow: hidden; }
-.post-card-visual-label { font-family: 'Playfair Display', serif; font-size: 56px; font-weight: 400; font-style: italic; color: var(--light); }
-.post-card-content { padding: 28px 28px 36px; flex: 1; display: flex; flex-direction: column; }
-.post-card-tag { font-size: 9px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--light); margin-bottom: 12px; }
-.post-card-title { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 400; line-height: 1.3; color: var(--black); margin-bottom: 12px; flex: 1; }
+.post-card-visual { aspect-ratio: 4/3; position: relative; overflow: hidden; }
+.post-card-visual-bg { position: absolute; inset: 0; background-size: cover; background-position: center; filter: blur(5px) brightness(0.65); transform: scale(1.08); transition: filter 0.3s; }
+.post-card:hover .post-card-visual-bg { filter: blur(3px) brightness(0.7); }
+.post-card-visual-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.05) 70%); }
+.post-card-keyword { position: absolute; bottom: 16px; left: 16px; font-family: 'Bebas Neue', sans-serif; font-size: 42px; line-height: 0.9; color: rgba(255,255,255,0.9); letter-spacing: 0.02em; }
+.post-card-content { padding: 24px 24px 30px; flex: 1; display: flex; flex-direction: column; }
+.post-card-tag { font-size: 9px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--light); margin-bottom: 10px; }
+.post-card-title { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 400; line-height: 1.3; color: var(--black); flex: 1; }
 .post-card-title em { font-style: italic; }
-.post-card-date { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light); margin-top: auto; padding-top: 20px; border-top: 1px solid var(--sand); }
-.empty-card { background: var(--off); display: flex; align-items: center; justify-content: center; min-height: 300px; cursor: default; }
-.empty-card:hover { background: var(--off); }
-.empty-text { font-family: 'Playfair Display', serif; font-size: 14px; font-style: italic; color: var(--light); text-align: center; padding: 40px; }
+.post-card-date { font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light); margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--sand); }
 
-.newsletter { background: var(--black); padding: 80px 48px; text-align: center; }
-.newsletter h2 { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 400; color: var(--white); margin-bottom: 12px; }
-.newsletter h2 em { font-style: italic; color: var(--sand); }
-.newsletter p { font-size: 14px; color: var(--mid); margin-bottom: 40px; }
-.newsletter-cta { display: inline-block; background: var(--white); color: var(--black); font-size: 11px; font-weight: 500; letter-spacing: 0.25em; text-transform: uppercase; padding: 16px 48px; text-decoration: none; transition: background 0.15s; }
-.newsletter-cta:hover { background: var(--sand); }
+/* CTA */
+.cta-section { background: var(--black); padding: 80px 48px; text-align: center; }
+.cta-section h2 { font-family: 'Playfair Display', serif; font-size: clamp(28px, 3.5vw, 44px); font-weight: 400; color: var(--white); margin-bottom: 12px; }
+.cta-section h2 em { font-style: italic; color: var(--sand); }
+.cta-section p { font-size: 14px; color: var(--mid); margin-bottom: 40px; }
+.cta-btn { display: inline-block; background: var(--white); color: var(--black); font-size: 11px; font-weight: 500; letter-spacing: 0.25em; text-transform: uppercase; padding: 16px 48px; text-decoration: none; transition: background 0.15s; }
+.cta-btn:hover { background: var(--sand); }
 
-footer { background: var(--off); border-top: 1px solid var(--sand); padding: 36px 48px; display: flex; align-items: center; justify-content: space-between; }
+footer { background: var(--off); border-top: 1px solid var(--sand); padding: 32px 48px; display: flex; align-items: center; justify-content: space-between; }
 .footer-logo { font-size: 12px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--black); text-decoration: none; }
 .footer-links { display: flex; gap: 28px; list-style: none; }
 .footer-links a { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); text-decoration: none; transition: color 0.15s; }
@@ -80,16 +90,15 @@ footer { background: var(--off); border-top: 1px solid var(--sand); padding: 36p
 
 @media (max-width: 900px) {
   nav { padding: 0 24px; } .nav-links { display: none; }
-  .hero { grid-template-columns: 1fr; padding: 60px 24px; gap: 40px; }
-  .hero-right { align-items: flex-start; }
-  .section-wrap { padding: 60px 24px; }
+  .hero { grid-template-columns: 1fr; }
+  .hero-right { min-height: 160px; }
+  .section-wrap { padding: 48px 24px; }
   .featured-card { grid-template-columns: 1fr; }
-  .featured-visual { min-height: 240px; }
-  .featured-content { padding: 36px 28px; }
+  .featured-visual { min-height: 260px; }
+  .featured-content { padding: 32px 24px; }
   .posts-grid { grid-template-columns: 1fr; }
-  .newsletter { padding: 60px 24px; }
-  footer { padding: 28px 24px; flex-direction: column; gap: 16px; text-align: center; }
-  .footer-links { display: none; }
+  .cta-section { padding: 60px 24px; }
+  footer { padding: 28px 24px; flex-direction: column; gap: 16px; text-align: center; } .footer-links { display: none; }
 }
 </style>
 </head>
@@ -108,10 +117,11 @@ footer { background: var(--off); border-top: 1px solid var(--sand); padding: 36p
 <section class="hero">
   <div class="hero-left">
     <div class="hero-tag">Blog FIGU — Moda & Estilo</div>
-    <h1>Tudo sobre moda<br>feminina <em>com identidade</em></h1>
-    <p class="hero-desc">Tendências, inspirações e o ponto de vista da FIGU sobre moda — publicado toda semana para quem valoriza tecido, corte e estilo com intenção.</p>
+    <h1>Moda feminina<br>com <em>intenção</em></h1>
+    <p class="hero-desc">Tendências, inspirações e o ponto de vista da FIGU — publicado toda semana para quem valoriza tecido, corte e estilo.</p>
   </div>
   <div class="hero-right">
+    <div class="hero-right-bg">F</div>
     <div class="hero-stat">
       <div class="hero-stat-num">03</div>
       <div class="hero-stat-label">Matérias publicadas</div>
@@ -127,13 +137,17 @@ footer { background: var(--off); border-top: 1px solid var(--sand); padding: 36p
   <div class="section-label">Matéria em destaque</div>
   <a href="por-que-o-tecido-importa.html" class="featured-card">
     <div class="featured-visual">
-      <div class="featured-visual-label">Tecido</div>
-      <div class="featured-badge">Moda & Qualidade</div>
+      <div class="featured-visual-bg" style="background-image: url('https://acdn-us.mitiendanube.com/stores/006/047/794/products/whatsapp-image-2025-12-01-at-14-04-28-red-cut-75f2b130fc159d3e4217708196680721-640-0.webp');"></div>
+      <div class="featured-visual-overlay"></div>
+      <div class="featured-visual-content">
+        <div class="featured-keyword">TECIDO</div>
+        <div class="featured-badge">Qualidade</div>
+      </div>
     </div>
     <div class="featured-content">
       <div class="card-meta">Abril 2026 · 7 min de leitura</div>
       <h2 class="card-title">Por que o tecido é a diferença entre uma roupa boa e uma roupa <em>que dura</em></h2>
-      <p class="card-excerpt">Você já comprou uma peça que parecia ótima na loja e virou um trapo depois de cinco lavagens? O problema raramente é o modelo — quase sempre é o tecido. E reconhecer qualidade é mais simples do que parece.</p>
+      <p class="card-excerpt">Você já comprou uma peça que parecia ótima na loja e ficou sem graça depois de cinco lavagens? O problema raramente é o modelo — quase sempre é o tecido.</p>
       <span class="card-link">Ler matéria</span>
     </div>
   </a>
@@ -142,37 +156,53 @@ footer { background: var(--off); border-top: 1px solid var(--sand); padding: 36p
 <section class="section-wrap">
   <div class="section-label">Todas as matérias</div>
   <div class="posts-grid">
-    <a href="tendencias-2026.html" class="post-card">
-      <div class="post-card-visual"><div class="post-card-visual-label">26</div></div>
-      <div class="post-card-content">
-        <div class="post-card-tag">Tendências</div>
-        <div class="post-card-title">As grandes tendências de 2026 — e onde a <em>FIGU já chegou</em></div>
-        <div class="post-card-date">Março 2026</div>
-      </div>
-    </a>
-    <a href="guarda-roupa-feminino-pecas-chave.html" class="post-card">
-      <div class="post-card-visual"><div class="post-card-visual-label">05</div></div>
-      <div class="post-card-content">
-        <div class="post-card-tag">Estilo & Guarda-Roupa</div>
-        <div class="post-card-title">As peças-chave que todo guarda-roupa feminino <em>sofisticado precisa ter</em></div>
-        <div class="post-card-date">Abril 2026</div>
-      </div>
-    </a>
+
     <a href="por-que-o-tecido-importa.html" class="post-card">
-      <div class="post-card-visual"><div class="post-card-visual-label">T</div></div>
+      <div class="post-card-visual">
+        <div class="post-card-visual-bg" style="background-image: url('https://acdn-us.mitiendanube.com/stores/006/047/794/products/whatsapp-image-2025-12-01-at-14-04-28-red-cut-75f2b130fc159d3e4217708196680721-640-0.webp');"></div>
+        <div class="post-card-visual-overlay"></div>
+        <div class="post-card-keyword">TECIDO</div>
+      </div>
       <div class="post-card-content">
-        <div class="post-card-tag">Moda & Qualidade</div>
+        <div class="post-card-tag">Qualidade</div>
         <div class="post-card-title">Por que o tecido é a diferença entre uma roupa boa e uma roupa <em>que dura</em></div>
         <div class="post-card-date">Abril 2026</div>
       </div>
     </a>
+
+    <a href="guarda-roupa-feminino-pecas-chave.html" class="post-card">
+      <div class="post-card-visual">
+        <div class="post-card-visual-bg" style="background-image: url('https://acdn-us.mitiendanube.com/stores/006/047/794/products/pallo-01-344-53d6ba2966c0c6cec317651938220848-640-0.webp');"></div>
+        <div class="post-card-visual-overlay"></div>
+        <div class="post-card-keyword">GUARDA-<br>ROUPA</div>
+      </div>
+      <div class="post-card-content">
+        <div class="post-card-tag">Estilo</div>
+        <div class="post-card-title">As peças-chave que todo guarda-roupa feminino <em>sofisticado precisa ter</em></div>
+        <div class="post-card-date">Abril 2026</div>
+      </div>
+    </a>
+
+    <a href="tendencias-2026.html" class="post-card">
+      <div class="post-card-visual">
+        <div class="post-card-visual-bg" style="background-image: url('https://acdn-us.mitiendanube.com/stores/006/047/794/products/pallo-01-133-f5f2d90990204b0e7e17646080028765-1024-1024.webp');"></div>
+        <div class="post-card-visual-overlay"></div>
+        <div class="post-card-keyword">TENDÊN-<br>CIAS</div>
+      </div>
+      <div class="post-card-content">
+        <div class="post-card-tag">Moda</div>
+        <div class="post-card-title">As grandes tendências de 2026 — e onde a <em>FIGU já chegou</em></div>
+        <div class="post-card-date">Março 2026</div>
+      </div>
+    </a>
+
   </div>
 </section>
 
-<section class="newsletter">
+<section class="cta-section">
   <h2>Veja a coleção<br><em>completa da FIGU</em></h2>
   <p>Cada matéria do blog foi escrita pensando nas peças da coleção. Conheça todas.</p>
-  <a href="https://figu.com.br/produtos/" class="newsletter-cta">Ver coleção</a>
+  <a href="https://figu.com.br/produtos/" class="cta-btn">Ver coleção</a>
 </section>
 
 <footer>
