@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>As Tendências de Moda 2026 — e onde a FIGU já chegou | Blog FIGU</title>
+<meta name="description" content="Das passarelas de Milão e Paris ao seu guarda-roupa: as 5 maiores tendências de moda feminina de 2026, e as peças FIGU que traduzem cada uma delas com sofisticação.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --black: #111111;
+  --white: #FFFFFF;
+  --off: #F7F6F4;
+  --sand: #E8E2D9;
+  --mid: #888580;
+  --light: #C8C5BF;
+  --text: #2A2A28;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  color: var(--text);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* NAV */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--white);
+  border-bottom: 1px solid var(--sand);
+  padding: 0 48px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-logo {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--black);
+  text-decoration: none;
+}
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--mid);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.nav-links a:hover { color: var(--black); }
+
+/* HERO */
+.hero {
+  padding: 96px 48px 80px;
+  max-width: 820px;
+}
+.hero-tag {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: 24px;
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(36px, 5vw, 62px);
+  font-weight: 400;
+  line-height: 1.12;
+  color: var(--black);
+  margin-bottom: 28px;
+}
+.hero h1 em {
+  font-style: italic;
+}
+.hero-intro {
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--mid);
+  max-width: 640px;
+  margin-bottom: 40px;
+}
+.hero-meta {
+  display: flex;
+  gap: 32px;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--light);
+  padding-top: 32px;
+  border-top: 1px solid var(--sand);
+}
+
+/* MAIN LAYOUT */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+/* SECTION HEADER */
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--light);
+  margin-bottom: 40px;
+}
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--sand);
+}
+
+/* TREND SECTION */
+.trend {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+  padding: 72px 0;
+  border-bottom: 1px solid var(--sand);
+}
+.trend:last-of-type { border-bottom: none; }
+
+.trend-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 11px;
+  font-style: italic;
+  color: var(--light);
+  margin-bottom: 20px;
+}
+.trend h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+.trend h2 em { font-style: italic; }
+.trend p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--mid);
+  margin-bottom: 20px;
+}
+.trend p strong {
+  color: var(--text);
+  font-weight: 400;
+}
+
+/* INLINE PRODUCT MENTION */
+.inline-mention {
+  display: inline;
+  color: var(--black);
+  font-weight: 400;
+  border-bottom: 1px solid var(--black);
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+.inline-mention:hover { opacity: 0.5; }
+
+/* PRODUCT CARDS */
+.cards-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.card {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 20px;
+  align-items: center;
+  background: var(--off);
+  padding: 20px;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.card:hover { background: var(--sand); }
+.card-img {
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+  background: var(--sand);
+}
+.card-img-placeholder {
+  width: 100px;
+  height: 120px;
+  background: var(--sand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--light);
+}
+.card-info {}
+.card-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--black);
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}
+.card-price {
+  font-size: 12px;
+  color: var(--mid);
+  margin-bottom: 14px;
+}
+.card-btn {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--black);
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.card-btn:hover { background: #333; }
+
+/* PALETTE STRIP */
+.palette {
+  background: var(--black);
+  padding: 64px 48px;
+  margin: 80px 0;
+}
+.palette-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+.palette-title em { font-style: italic; }
+.palette-sub {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: 48px;
+}
+.swatches {
+  display: flex;
+  gap: 2px;
+}
+.swatch {
+  flex: 1;
+  height: 64px;
+  position: relative;
+}
+.swatch-label {
+  position: absolute;
+  bottom: -28px;
+  left: 0;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mid);
+  white-space: nowrap;
+}
+
+/* PULL QUOTE */
+.pull-quote {
+  padding: 80px 0;
+  border-top: 1px solid var(--sand);
+  border-bottom: 1px solid var(--sand);
+  margin: 80px 0;
+}
+.pull-quote blockquote {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--black);
+  max-width: 680px;
+}
+
+/* CLOSING CTA */
+.closing {
+  padding: 80px 0 100px;
+  text-align: center;
+}
+.closing p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--mid);
+  max-width: 520px;
+  margin: 0 auto 36px;
+}
+.closing-btn {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--black);
+  padding: 16px 48px;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.closing-btn:hover { background: #333; }
+
+/* FOOTER */
+footer {
+  background: var(--off);
+  border-top: 1px solid var(--sand);
+  padding: 36px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-logo {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--black);
+  text-decoration: none;
+}
+.footer-copy {
+  font-size: 11px;
+  color: var(--light);
+}
+
+@media (max-width: 768px) {
+  nav { padding: 0 24px; }
+  .nav-links { display: none; }
+  .hero { padding: 60px 24px 48px; }
+  .container { padding: 0 24px; }
+  .trend { grid-template-columns: 1fr; gap: 40px; padding: 48px 0; }
+  .palette { padding: 48px 24px; }
+  .swatches { flex-wrap: wrap; gap: 4px; }
+  .swatch { flex: 0 0 calc(33% - 4px); }
+  footer { padding: 28px 24px; flex-direction: column; gap: 12px; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="https://figu.com.br" class="nav-logo">Figu</a>
+  <ul class="nav-links">
+    <li><a href="https://figu.com.br/produtos/">Coleção</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="https://figu.com.br/quem-somos/">Sobre</a></li>
+    <li><a href="https://figu.com.br/contato/">Contato</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="container">
+  <section class="hero">
+    <div class="hero-tag">Tendências · Moda 2026</div>
+    <h1>As grandes tendências<br>de 2026 — e onde<br>a <em>FIGU já chegou</em></h1>
+    <p class="hero-intro">Das passarelas de Milão e Paris ao seu cotidiano em São Paulo: o que o mundo da moda está descobrindo agora, a FIGU já pratica há tempos. Confira as 5 tendências que definem 2026 — e as peças que entregam cada uma delas.</p>
+    <div class="hero-meta">
+      <span>Março 2026</span>
+      <span>Leitura: 7 min</span>
+      <span>Estilo & Tendências</span>
+    </div>
+  </section>
+</div>
+
+<!-- TRENDS -->
+<div class="container">
+
+  <!-- TREND 1 -->
+  <div class="section-label">01 — Quiet Luxury</div>
+  <div class="trend">
+    <div class="trend-text">
+      <div class="trend-num">Tendência 01</div>
+      <h2>Elegância que <em>não precisa gritar</em></h2>
+      <p>O quiet luxury consolidou 2026 como o novo padrão do fashion de alto nível: tecidos excepcionais, cortes precisos e ausência total de logos visíveis. A roupa fala por si — pela qualidade do material, pela engenharia do corte, pelo caimento impecável.</p>
+      <p>É uma estética que os verdadeiros conhecedores reconhecem imediatamente. Nada precisa ser explicado: <a href="https://figu.com.br/conjuntos/" class="inline-mention">o Conjunto Adele</a> — blusa e calça na mesma linha — é exatamente isso. Modelagem refinada, tecido com presença, sem nenhum detalhe supérfluo.</p>
+    </div>
+    <div class="cards-col">
+      <a href="https://figu.com.br/produtos/calca-adele/" class="card">
+        <img src="https://acdn-us.mitiendanube.com/stores/006/047/794/products/3844e58a-9352-49e4-9ec1-1e4fa474fb04-9697147be7dba494d817707379940591-480-0.webp" alt="Calça Emma" class="card-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="card-img-placeholder" style="display:none;">Foto</div>
+        <div class="card-info">
+          <div class="card-name">Calça Adele</div>
+          <div class="card-price">R$ 448,00</div>
+          <span class="card-btn">Comprar</span>
+        </div>
+      </a>
+      <a href="https://figu.com.br/produtos/blusa-adele/" class="card">
+        <div class="card-img-placeholder">Foto</div>
+        <div class="card-info">
+          <div class="card-name">Blusa Adele</div>
+          <div class="card-price">R$ 278,00</div>
+          <span class="card-btn">Comprar</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- TREND 2 -->
+  <div class="section-label">02 — Textura</div>
+  <div class="trend">
+    <div class="trend-text">
+      <div class="trend-num">Tendência 02</div>
+      <h2>Tecido como <em>declaração estética</em></h2>
+      <p>As passarelas de inverno 2026 foram categóricas: textura virou espetáculo. Materiais com dimensão tátil forte dominaram as coleções de Bottega Veneta, Chloé e Marni. A roupa perfeita e sem história já não é mais o ideal — o sensorial, o material com caráter são os novos protagonistas.</p>
+      <p>Tecidos diferenciados são DNA da FIGU desde o início. A <a href="https://figu.com.br/produtos/saia-carola-illbk/" class="inline-mention">Saia Carola</a> carrega uma identidade material inconfundível — não é sobre estampa, é sobre como a peça se sente na pele e se comporta no corpo. Já o <a href="https://figu.com.br/produtos/vestido-aya-tfa7l/" class="inline-mention">Vestido Aya</a> entrega essa mesma presença em silhueta fluida.</p>
+    </div>
+    <div class="cards-col">
+      <a href="https://figu.com.br/produtos/saia-carola-illbk/" class="card">
+        <div class="card-img-placeholder">Foto</div>
+        <div class="card-info">
+          <div class="card-name">Saia Carola</div>
+          <div class="card-price">R$ 764,00</div>
+          <span class="card-btn">Comprar</span>
+        </div>
+      </a>
+      <a href="https://figu.com.br/produtos/vestido-aya-tfa7l/" class="card">
+        <div class="card-img-placeholder">Foto</div>
+        <div class="card-info">
+          <div class="card-name">Vestido Aya</div>
+          <div class="card-price">R$ 688,00</div>
+          <span class="card-btn">Comprar</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<!-- PALETTE -->
+<section class="palette">
+  <div style="max-width:1004px; margin:0 auto;">
+    <div class="palette-title">A paleta de <em>cores de 2026</em></div>
+    <div class="palette-sub">e onde a FIGU já mora</div>
+    <div class="swatches">
+      <div class="swatch" style="background:#F2EDE4;"><span class="swatch-label">Off-White</span></div>
+      <div class="swatch" style="background:#D4C4A8;"><span class="swatch-label">Areia</span></div>
+      <div class="swatch" style="background:#8B7355;"><span class="swatch-label">Caramelo</span></div>
+      <div class="swatch" style="background:#5C4A3A;"><span class="swatch-label">Marrom</span></div>
+      <div class="swatch" style="background:#B22222;"><span class="swatch-label">Vermelho</span></div>
+      <div class="swatch" style="background:#2A2A28;"><span class="swatch-label">Preto Seco</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+
+  <!-- TREND 3 -->
+  <div class="section-label">03 — Alfaiataria</div>
+  <div class="trend">
+    <div class="trend-text">
+      <div class="trend-num">Tendência 03</div>
+      <h2>Corte <em>como protagonista</em></h2>
+      <p>A alfaiataria de 2026 ganhou em Fendi, Saint Laurent e Stella McCartney uma leitura mais sensual: a proporção é alongada, a feminilidade aparece no equilíbrio entre estrutura e fluidez. Não é mais o terninho clássico — é a peça que esculpe o corpo com intenção.</p>
+      <p>O <a href="https://figu.com.br/produtos/macaquinho-lori/" class="inline-mention">Macacão Lóri</a> é uma aula de proporção: estruturado onde precisa, fluido onde deve. A <a href="https://figu.com.br/produtos/calca-emma/" class="inline-mention">Calça Emma</a> tem esse mesmo rigor — um corte que valoriza o corpo sem precisar anunciar isso.</p>
+    </div>
+    <div class="cards-col">
+      <a href="https://figu.com.br/produtos/macaquinho-lori/" class="card">
+        <div class="card-img-placeholder">Foto</div>
+        <div class="card-info">
+          <div class="card-name">Macacão Lóri</div>
+          <div class="card-price">R$ 329,00</div>
+          <span class="card-btn">Comprar</span>
+        </div>
+      </a>
+      <a href="https://figu.com.br/produtos/calca-emma/" class="card">
+        <div class="card-img-placeholder">Foto</div>
+        <div class="card-info">
+          <div class="card-name">Calça Emma</div>
+          <div class="card-price">R$ 598,00</div>
+          <span class="card-btn">Comprar</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- PULL QUOTE -->
+  <div class="pull-quote">
+    <blockquote>"O que dura é feito de intenção, qualidade e identidade. Na moda de 2026, a roupa que importa é a que você vai querer daqui a dez anos."</blockquote>
+  </div>
+
+  <!-- TREND 4 -->
+  <div class="section-label">04 — Layering</div>
+  <div class="trend">
+    <div class="trend-text">
+      <div class="trend-num">Tendência 04</div>
+      <h2>Camadas como <em>arte de compor</em></h2>
+      <p>Sobrepor deixou de ser solução prática e passou a ser o elemento central do styling em 2026. As coleções de Chanel a Prada exploram o jogo de camadas como exercício de composição — cada peça revela um fragmento da anterior, criando looks ricos em textura, cor e proporção.</p>
+      <p>O <a href="https://figu.com.br/produtos/top-ciccy-gjpm3/" class="inline-mention">Top Ciccy</a> em off-white sobre a Calça Emma é o ponto de partida perfeito. A <a href="https://figu.com.br/produtos/blusa-nina/" class="inline-mention">Blusa Nina</a> com a Saia Carola entrega esse mesmo jogo de volumes — sofisticado, mas nunca forçado.</p>
+    </div>
+    <div class="cards-col">
+      <a href="https://figu.com.br/produtos/top-ciccy-gjpm3/" class="card">
+        <img src="https://acdn-us.mitiendanube.com/stores/006/047/794/products/3844e58a-9352-49e4-9ec1-1e4fa474fb04-9697147be7dba494d817707379940591-480-0.webp" alt="Top Ciccy" class="card-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="card-img-placeholder" style="display:none;">Foto</div>
+        <div class="card-info">
+          <div class="card-name">Top Ciccy</div>
+          <div class="card-price">R$ 434,00</div>
+          <span class="card-btn">Comprar</span>
+        </div>
+      </a>
+      <a href="https://figu.com.br/produtos/blusa-nina/" class="card">
+        <div class="card-img-placeholder">Foto</div>
+        <div class="card-info">
+          <div class="card-name">Blusa Nina</div>
+          <div class="card-price">R$ 358,00</div>
+          <span class="card-btn">Comprar</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- TREND 5 -->
+  <div class="section-label">05 — Vermelho 2026</div>
+  <div class="trend">
+    <div class="trend-text">
+      <div class="trend-num">Tendência 05</div>
+      <h2>O <em>vermelho</em> que chegou<br>para ficar</h2>
+      <p>O vermelho de 2026 não é o clássico vermelho aberto nem o bordô profundo. É um tom vivo, saturado, com leve calor — presente em ambientes formais, eventos sociais e looks do dia a dia. Uma cor que faz uma mulher entrar em qualquer sala com presença imediata.</p>
+      <p>O <a href="https://figu.com.br/produtos/vestido-olympia-vermelho-qcdfk/" class="inline-mention">Vestido Olympia Vermelho</a> chegou no momento certo: caimento midi, tecido fluido, modelagem estruturada. O vermelho como protagonista absoluto, sem competição. Se você tem uma ocasião especial em 2026, essa é a peça.</p>
+    </div>
+    <div class="cards-col">
+      <a href="https://figu.com.br/produtos/vestido-olympia-vermelho-qcdfk/" class="card">
+        <img src="https://acdn-us.mitiendanube.com/stores/006/047/794/products/pallo-01-133-f5f2d90990204b0e7e17646080028765-480-0.webp" alt="Vestido Olympia Vermelho" class="card-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="card-img-placeholder" style="display:none;">Foto</div>
+        <div class="card-info">
+          <div class="card-name">Vestido Olympia Vermelho</div>
+          <div class="card-price">R$ 678,00</div>
+          <span class="card-btn">Comprar</span>
+        </div>
+      </a>
+      <a href="https://figu.com.br/produtos/vestido-olympia-off-white-j63ak/" class="card">
+        <div class="card-img-placeholder">Foto</div>
+        <div class="card-info">
+          <div class="card-name">Vestido Olympia Off White</div>
+          <div class="card-price">R$ 678,00</div>
+          <span class="card-btn">Comprar</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- CLOSING -->
+  <div class="closing">
+    <p>A moda de 2026 chegou com uma mensagem clara: o que dura é feito de intenção, qualidade e identidade. Na FIGU, isso nunca foi tendência — sempre foi ponto de partida.</p>
+    <a href="https://figu.com.br/produtos/" class="closing-btn">Ver toda a coleção</a>
+  </div>
+
+</div>
+
+<footer>
+  <a href="https://figu.com.br" class="footer-logo">Figu</a>
+  <span class="footer-copy">figu.com.br · São Paulo, SP</span>
+</footer>
+
+</body>
+</html>
